@@ -1,0 +1,13 @@
+export{default as Login} from './Login'
+export{default as Signup} from './Signup'
+export{default as VerifyOtp} from './VerifyOtp'
+export{default as Home} from './Home/Home'
+export {default as AdminLogin} from './Admin/AdminLogin'
+export {default as AdminHome} from './Admin/AdminHome'
+export {default as TutorialScreen} from './TutorialScreen/TutorialScreen'
+export{default as HealthInfo } from './HealthInfo/HealthInfo'
+export{default as  Profile} from './Profile/Profile'
+export{default as  Post} from './Post/Post'
+export{default as  DonationPage } from './DonationPage/DonationPage'
+export{default as BloodBankPage} from './BloodBankPage/BloodBankPage'
+

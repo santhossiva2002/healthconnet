@@ -1,0 +1,18 @@
+.infoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .iconBlue {
+    color: blue;
+  }
+  
+  .icon {
+    margin-right: 8px;
+  }
+  
+  .checkmarkIcon {
+    color: green;
+    margin-left: 8px;
+  }

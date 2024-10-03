@@ -1,0 +1,345 @@
+/* .tutorial-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.tutorial-step {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+} */
+
+/* Container to center the tutorial screen */
+
+
+/* .tutorial-container {
+  width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); 
+  backdrop-filter: blur(8px); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nextButton,
+.skipButton,
+.signUpButton,
+.loginButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nextButton {
+  background-color: #2196F3;
+  color: white;
+}
+
+.skipButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.signUpButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.loginButton {
+  background-color: #FFC107;
+  color: black;
+}
+
+.nextButton:hover {
+  background-color: #1976D2;
+}
+
+.skipButton:hover {
+  background-color: #e53935;
+}
+
+.signUpButton:hover {
+  background-color: #45a049;
+}
+
+.loginButton:hover {
+  background-color: #FFA000;
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.admin-check {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home_page {
+  padding-bottom: 60px;
+}
+
+.tutorial-step {
+  margin-bottom: 20px;
+}
+
+.tutorial-step p {
+  margin: 10px 0; 
+} */
+
+.tutorial-container {
+  width: 400px;
+  padding: 20px;
+  background: #ffffff; /* Solid background for better contrast */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
+  animation: fadeIn 0.5s ease-out, bounceIn 1s ease; /* Add animations */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #333; /* Dark color for better readability */
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555; /* Slightly lighter color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light border for input fields */
+  border-radius: 8px; /* Slightly rounded corners */
+  background: #f9f9f9; /* Light background for input fields */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft inset shadow */
+  color: #333; /* Dark text color */
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.nextButton,
+.skipButton,
+.signUpButton,
+.loginButton {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button press effect */
+  font-size: 1em;
+}
+
+.nextButton {
+  background: linear-gradient(135deg, #00b4db, #0083b0); /* Gradient background */
+  color: white;
+}
+
+.skipButton {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Gradient background */
+  color: white;
+}
+
+.signUpButton {
+  background: linear-gradient(135deg, #34e89e, #0f3443); /* Gradient background */
+  color: white;
+}
+
+.loginButton {
+  background: linear-gradient(135deg, #f6d365, #fda085); /* Gradient background */
+  color: black;
+}
+
+.nextButton:hover {
+  background: linear-gradient(135deg, #0092d1, #006a8e); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.skipButton:hover {
+  background: linear-gradient(135deg, #e04f5f, #e0a060); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.signUpButton:hover {
+  background: linear-gradient(135deg, #2dc68d, #0a2d3b); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #e0b47f, #e09a59); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666; /* Slightly lighter color for contrast */
+}
+
+.admin-check {
+  position: absolute;
+  top: -35px;
+  right: 25px;
+  background: linear-gradient(135deg, #34e89e, #0f3443); /* Gradient background */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home_page {
+  padding-bottom: 60px;
+}
+
+.tutorial-step {
+  margin-bottom: 25px; /* Increased space between steps */
+  text-align: center; /* Center align text for better readability */
+}
+
+.tutorial-step p {
+  margin: 15px 0; /* Adjusted margin for paragraphs */
+  line-height: 1.6; /* Increased line-height for better readability */
+}

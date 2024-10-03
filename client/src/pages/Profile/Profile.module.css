@@ -1,0 +1,290 @@
+/* Container for the entire profile page */
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+/* Header section containing profile image and info */
+.profileHeader {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  gap: 20px;
+  position: relative; /* Added for positioning the small div */
+}
+
+/* Profile picture styling */
+.profilePic {
+  width: 167px;
+  height: 210px;
+  border-radius: 11%;
+  object-fit: cover;
+  border: 4px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.profilePic:hover{
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Additional Info section styling */
+.additionalInfo {
+  position: absolute;
+  top: 20px;
+  left: 105%; /* Adjust based on profile picture width */
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust width as needed */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.additionalInfo:hover{
+  transform: scale(1.05); /* Slightly increase size on hover */
+
+}
+/* Info item styling */
+.additionalInfo .infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.additionalInfo .infoItem .iconBlue {
+  color: #007bff ;
+  margin: 10px; /* Use !important only if necessary */
+}
+.additionalInfo .infoItem .infoText {
+  font-size: 17px; /* Adjust size if needed */
+  color: #333;
+}
+
+
+/* Profile information styling */
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto; /* Pushes profile info to the right */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.profileInfo:hover{
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+/* Profile info headings */
+.profileInfo h1 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Icon and text styling */
+.profileInfo .infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileInfo .infoItem i {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.profileInfo .infoItem .infoText {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bio styling */
+.profileInfo .bio {
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth hover effect */
+
+}
+.profileInfo .bio:hover{
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Doctor-specific details styling */
+.doctorDetails {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #007bff;
+  font-size: 14px;
+}
+
+/* Section for posted images */
+.postedImages {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  
+}
+
+/* Title for the posted images section */
+.postedImages h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 600;
+
+  padding-bottom: 10px;
+}
+
+/* Updated Grid layout for posted images */
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Responsive grid with dynamic columns */
+  gap: 20px; /* Space between the cards */
+  justify-items: center; /* Center items in the grid */
+}
+
+/* Individual post card styling */
+.postCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Clip any overflowing content */
+  display: flex;
+  flex-direction: column; /* Stack image and text */
+  align-items: stretch; /* Make sure children take full width */
+}
+
+/* Posted image styling */
+.postImage {
+  width: 100%;
+  height: 180px; /* Uniform height for images */
+  object-fit: cover; /* Ensures images cover the container */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+/* Hover effect for post images */
+.postCard:hover .postImage {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Details for each post */
+.postDetails {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for post cards */
+.postCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.followInfo {
+  position: absolute;
+  top: 20px;
+  right: 105%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  height: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.followInfo:hover{
+  transform: scale(1.05); /* Slightly increase size on hover */
+
+}
+/* Icon styling */
+.followInfo .infoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.followInfo .icon {
+  color: #007bff;
+  font-size: 20px;
+}
+
+.followInfo .infoText {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profilePic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profileInfo {
+    font-size: 14px;
+  }
+
+  .profileInfo h1 {
+    font-size: 22px;
+  }
+
+  .postedImages {
+    padding: 15px;
+  }
+
+  .imagesGrid {
+    flex-direction: column;
+  }
+
+  .postCard {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconBlue {
+  color: blue;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.checkmarkIcon {
+  color: green;
+  margin-left: 8px;
+}

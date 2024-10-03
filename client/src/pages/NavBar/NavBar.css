@@ -1,0 +1,104 @@
+/* .navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  .icon-link {
+    font-size: 24px;
+    font-weight: bold;
+  }
+   */
+
+   
+   .navbar {
+    background-color: #333;
+    padding: 10px 20px; /* Added horizontal padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Horizontal padding for better spacing */
+    display: block;
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    color: #fff; /* Ensure text color is visible on hover */
+  }
+  
+  .icon-link {
+    font-size: 24px;
+    font-weight: bold;
+    background: #ff5722; /* Background color for icon link */
+    border-radius: 50%; /* Circular background for the icon link */
+    color: white;
+    text-align: center;
+    line-height: 40px; /* Align icon vertically */
+    width: 40px; /* Fixed width for circular button */
+    height: 40px; /* Fixed height for circular button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .icon-link:hover {
+    background-color: #ff9800; /* Highlight color on hover */
+  }
+  
+  .logout-item {
+    margin-left: auto; /* Align logout button to the right */
+  }
+  
+  .loginButton {
+    background-color: #ff5722; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .loginButton:hover {
+    background-color: #e64a19; /* Darker color on hover */
+  }
+  
